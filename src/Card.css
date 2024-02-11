@@ -1,0 +1,92 @@
+.book {
+  height: 25rem;
+  width: 25rem;
+  font-size: 1rem;
+  box-shadow: 1rem 2rem 3rem rgba(214, 21, 114, 0.62);
+  text-align: center;
+  position: relative;
+  color: #ab125a;
+  font-family: "Pangolin", cursive;
+}
+
+.page {
+  width: 100%;
+  height: 25rem;
+  perspective: 1500px;
+}
+
+.page__1 {
+  background-color: #d51770;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 1s 0.3s;
+  transform-origin: 0 50%;
+  z-index: 2;
+}
+.page__1 p {
+  font-size: 3rem;
+  
+}
+.page__1::after {
+  content: "My dear Jermane,\A\AWe've had our fair share of ups and downs over the years, but through it all, my love for you has never wavered. \A\AOur connection and bond has only grown stronger. You understand me like no one else, and your unwavering support keeps me going during difficult times.";
+  white-space: pre-wrap;
+  color: #eff0eb;
+  position: absolute;
+  padding-top: 1.5rem;
+  top: 1rem; /* Adjust as needed */
+  right: 1rem; /* Adjust as needed */
+  bottom: 1rem; /* Adjust as needed */
+  left: 1rem; /* Adjust as needed */
+  background-color: #d51770;
+  width: calc(100% - 2rem); /* Adjust as needed */
+  height: calc(100% - 2rem); /* Adjust as needed */
+  z-index: 1;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: all 0.3s 0.5s;
+  font-size: 1.19rem;
+}
+.page__2 {
+  font-size: 1.19rem;
+  background-color: #f8a2ca;
+  width: calc(100% - 4rem); /* subtract double the padding from width */
+  height: calc(100% - 4rem); /* subtract double the padding from height */
+  top: 2rem; /* add padding to top */
+  left: 2rem; /* add padding to left */
+  opacity: 1;
+  padding: 2rem; /* add padding */
+}
+.page__2 .next-button {
+  background: transparent; /* make the button transparent */
+  border: 2px solid white; /* add a bordvalentine-buttoner so the button is visible */
+  color: white; /* make the text color white */
+  padding: 5px 20px; /* add some padding */
+  text-align: center; /* center the text */
+  text-decoration: none; /* remove underline */
+  display: inline-block;
+  font-size: 0.93rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background 0.3s ease; /* add a transition for hover effect */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.page__2 .next-button:hover {
+  background: #d51770; /* change background on hover */
+  color: #fff; /* change text color on hover */
+}
+.page:hover .page__1 {
+  transform: rotateY(-180deg);
+  box-shadow: 1rem 2rem 3rem rgba(214, 21, 114, 0.62);
+}
+.page:hover .page__1::after {
+  opacity: 1;
+}

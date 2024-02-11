@@ -1,0 +1,70 @@
+.will-you-be-my-valentine {
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.will-you-be-my-valentine h1 {
+  font-size: 4em;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+/* Valentine.css */
+
+.valentine-button-no {
+  /* Add your normal styles here */
+  background-color: #d51770; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.valentine-button-yes {
+  /* Add your normal styles here */
+  background-color: #d51770; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.valentine-button-no:hover {
+  /* Add your hover styles here */
+  background-color: #9a1050;
+  outline: none;
+}
+.valentine-button-yes:hover {
+  /* Add your hover styles here */
+  background-color: #9a1050;
+  outline: none;
+}
+
+.valentine-button-no:focus {
+  outline: none;
+}
+.valentine-button-yes:focus {
+  outline: none;
+}
+
+.approval__content h1 {
+  margin-bottom: 0;
+}
+
+.approval__content p {
+  font-size: 1.19rem;
+}
